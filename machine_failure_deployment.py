@@ -11,29 +11,29 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load("machine_failure_predication_model.pkl")
+model = jonlib.load("machine_failure_predication_model.pkl")
 st.title("Machine failure prediction system")
 st.write("you can enter the data from sensor and check whether your machine will work or fail inder certain condution")
 footfall = st.number_input("footfall")
 tempMode = st.number_input("tempMode")
-aq = st.number_input("AQ")
-uss= st.number_input("USS")
-cs= st.number_input("CS")
-voc = st.number_input("VOC")
-rp= st.number_input("RP")
-ip = st.number_input("IP")
-temperature = st.number_input("Temperature")
+AQ = st.number_input("AQ")
+USS = st.number_input("USS")
+CS = st.number_input("CS")
+VOC = st.number_input("VOC")
+RP = st.number_input("RP")
+IP = st.number_input("IP")
+Temperature = st.number_input("Temperature")
 
 df = pd.DataFrame({
     "footfall":[footfall],
     "tempMode":[tempMode],
-    "AQ":[aq],
-    "USS":[uss],
-    "CS":[cs],
-    "VOC":[voc],
-    "RP":[rp],
-    "IP":[ip],
-    "Temperature":[tenperature]
+    "AQ":[AQ],
+    "USS":[USS],
+    "CS":[CS],
+    "VOC":[VOC],
+    "RP":[RP],
+    "IP":[IP],
+    "Temperature":[Tenperature]
 })
 
 if st.button("Predict"):
