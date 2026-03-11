@@ -16,24 +16,24 @@ st.title("Machine failure prediction system")
 st.write("you can enter the data from sensor and check whether your machine will work or fail inder certain condution")
 footfall = st.number_input("footfall")
 tempMode = st.number_input("tempMode")
-AQ = st.number_input("AQ")
-USS = st.number_input("USS")
-CS = st.number_input("CS")
-VOC = st.number_input("VOC")
-RP = st.number_input("RP")
-IP = st.number_input("IP")
-Temperature = st.number_input("Temperature")
+aq = st.number_input("AQ")
+uss= st.number_input("USS")
+cs= st.number_input("CS")
+voc = st.number_input("VOC")
+rp= st.number_input("RP")
+ip = st.number_input("IP")
+temperature = st.number_input("Temperature")
 
 df = pd.DataFrame({
     "footfall":[footfall],
     "tempMode":[tempMode],
-    "AQ":[AQ],
-    "USS":[USS],
-    "CS":[CS],
-    "VOC":[VOC],
-    "RP":[RP],
-    "IP":[IP],
-    "Temperature":[Tenperature]
+    "AQ":[aq],
+    "USS":[uss],
+    "CS":[cs],
+    "VOC":[voc],
+    "RP":[rp],
+    "IP":[ip],
+    "Temperature":[tenperature]
 })
 
 if st.button("Predict"):
