@@ -3,8 +3,7 @@ import pandas as pd
 import joblib
 
 # Load Model
-model = joblib.load("machine_failure_prediction_model.pkl")
-
+model=joblib.load("model.pkl")
 st.title("Machine Failure Prediction System")
 
 st.write("Enter machine sensor values to predict failure")
