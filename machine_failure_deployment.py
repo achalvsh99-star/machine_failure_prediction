@@ -11,7 +11,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load("machine_failure_predication_model.pkl")
+model = joblib.load("machine_failure_prediction_model.pkl")
 st.title("Machine failure prediction system")
 st.write("you can enter the data from sensor and check whether your machine will work or fail inder certain condution")
 footfall = st.number_input("footfall")
